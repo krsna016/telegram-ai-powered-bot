@@ -1,0 +1,19 @@
+Company: Anurag Tech
+Founder: Anurag, 4th-year B.Tech CSE, AI/ML expert
+Office Timing: Monday to Friday, 10:00 AM to 6:00 PM IST
+Team Members:
+  - Rahul: DevOps Engineer
+  - Priya: AI/ML Engineer
+  - Sara: UI/UX Designer
+Company Values: Clarity, Creativity, Legacy
+Main Services:
+  - Telegram AI bots (Gemini/OpenAI)
+  - Data pipeline automation
+  - Remote client solutions
+  - Custom AI tools
+Location: Mathura, India
+Salary Structure:
+  - Intern: ₹15,000/month
+  - Junior: ₹30,000/month
+  - Senior: ₹70,000/month
+Mission: Build impact-first tech products that scale.
