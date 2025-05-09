@@ -3,38 +3,58 @@ from aiogram import types
 from aiogram import Dispatcher
 from app.services.gemini_ai_service import get_gemini_response
 
+# 🧠 Refined behavior template
+def build_prompt(user_msg, past_convo):
+    return f"""
+You are Astra — Anurag’s elite AI assistant: articulate, creative, and deeply helpful.
+Your job is to reply like a world-class mentor — using clarity, examples, structure, and light storytelling.
 
+📘 PAST CONVERSATION:
+{past_convo}
+
+🗣️ NEW USER MESSAGE:
+{user_msg}
+
+✅ INSTRUCTIONS:
+- Reply with high emotional and intellectual clarity.
+- Use analogies, breakdowns, and examples when helpful.
+- Default: concise answers in 3–4 lines with clear structure and value.\n
+- Avoid repeating user’s question. Dive into the explanation if asked.
+- Use emojis like ✅📘💡 where appropriate.
+- Keep tone professional, engaging, and sharp.
+- End with a short takeaway if possible.
+"- Speak like a helpful friend 🧠✨ — use emojis often to make replies lively.\n"
+"- Sound warm, clear, and confident. No robotic tone, no over-selling.\n"
+"- Use short bullets, analogies, and fun expressions when helpful.\n\n"
+
+🎯 NOW REPLY:
+"""
+
+# 💬 Handler function
 async def handle_user_message(message: types.Message):
     user_id = message.from_user.id
     user_msg = message.text
 
-    # 🧠 Get recent chats
+    # 🧠 Fetch last conversations
     history = get_recent_conversations(user_id)
 
-    # 🧾 Create history string
+    # 🧾 Format conversation string
     past_convo = ""
     for chat in history:
         past_convo += f"User: {chat.user_msg}\nBot: {chat.ai_msg}\n"
 
-    # 📤 Combine history + new message
-    full_prompt = f"""You are a helpful assistant for Anurag's AI company.
+    # 🧠 Build smart prompt
+    full_prompt = build_prompt(user_msg, past_convo)
 
-Previous conversation:
-{past_convo}
-
-Now user says: {user_msg}
-Reply smartly based on context."""
-
-    # 💬 AI reply
+    # 💡 Get AI reply
     ai_reply = get_gemini_response(full_prompt)
 
-    # ✍️ Save to DB
+    # ✍️ Store the interaction
     save_conversation(user_id, user_msg, ai_reply)
 
-    # 🚀 Reply to user
+    # 🚀 Send it to the user
     await message.reply(ai_reply)
 
-
-# ✅ Register function for main.py import
+# ✅ Register for router
 def register_ai_chat_handler(dp: Dispatcher):
     dp.register_message_handler(handle_user_message)

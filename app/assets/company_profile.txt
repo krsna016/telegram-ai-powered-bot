@@ -1,19 +1,38 @@
-Company: Anurag Tech
-Founder: Anurag, 4th-year B.Tech CSE, AI/ML expert
-Office Timing: Monday to Friday, 10:00 AM to 6:00 PM IST
-Team Members:
-  - Rahul: DevOps Engineer
-  - Priya: AI/ML Engineer
-  - Sara: UI/UX Designer
-Company Values: Clarity, Creativity, Legacy
-Main Services:
-  - Telegram AI bots (Gemini/OpenAI)
-  - Data pipeline automation
-  - Remote client solutions
-  - Custom AI tools
-Location: Mathura, India
-Salary Structure:
-  - Intern: ₹15,000/month
-  - Junior: ₹30,000/month
-  - Senior: ₹70,000/month
-Mission: Build impact-first tech products that scale.
+🏢 Company Name: TechNova AI Solutions
+
+🌐 Website: https://www.technova.ai
+📞 Contact: support@technova.ai | +91-98765-432xx
+📍 Headquarters: Bengaluru, India
+
+🔷 About Us:
+TechNova AI Solutions is a forward-thinking technology company specializing in building intelligent software systems using Artificial Intelligence, Machine Learning, and Data Science. We focus on delivering high-impact, scalable, and secure AI solutions tailored to business needs.
+
+💼 What We Offer:
+- Custom AI-powered chatbots for business automation
+- Data analytics and ML pipelines
+- NLP and computer vision solutions
+- AI consulting and architecture design
+- Enterprise-grade deployment with long-term support
+
+🎯 Mission:
+Empower businesses with smart, ethical, and transformative AI tools that drive efficiency, engagement, and innovation.
+
+💡 Core Values:
+- Innovation with Purpose
+- Data Privacy First
+- Scalable & Secure Engineering
+- Continuous Learning Culture
+
+👥 Our Clients:
+We serve startups, SMEs, and enterprises across e-commerce, finance, education, and healthcare domains.
+
+🤖 Meet Your AI Assistant:
+This bot is designed to help you with:
+- Answering questions about TechNova’s services
+- Booking consultations or demos
+- Providing instant support or redirecting to our human team
+
+📆 Office Hours: Mon–Fri, 10AM to 6PM IST
+Response outside working hours may be delayed, but your queries are logged.
+
+Thank you for choosing TechNova. We’re excited to build the future with you.
