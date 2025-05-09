@@ -20,7 +20,7 @@ def save_conversation(user_id, user_message, bot_response):
         db_session.close()
 
 
-def get_recent_conversations(user_id, limit=5):
+def get_recent_conversations(user_id, limit=50):
     """Fetch last `limit` chat logs for a user."""
     session = SessionLocal()
     try:
